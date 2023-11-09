@@ -10,8 +10,9 @@ def read_bq():
 
     # read BIGQUERY
     query = '''
-    SELECT DISTINCT tipo  
-    FROM COBRANSAAS.cobrancas    
+    SELECT *  
+    FROM DB_NAME.TABLE_NAME
+    LIMIT 10    
     '''
     bq_df = pd.read_gbq(
         query, credentials=credentials,  project_id=project_id)
