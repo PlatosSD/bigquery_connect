@@ -23,7 +23,7 @@ NAME_PROJECT = 'NAME_PROJECT_ID'
 
 `virtualenv venv`
 
-## 03. Ativando ambeite virtual
+## 03. Ativando ambiente virtual
 
 `source venv/bin/activate`
 
@@ -31,7 +31,20 @@ NAME_PROJECT = 'NAME_PROJECT_ID'
 
 `pip install -r requirements.txt`
 
-## 05. Executando código (via terminal bash ou powershell)
+## 05. Escrevendo a query
+
+No arquivo main.py, atualize a query para sua necessidade
+
+```
+    # read BIGQUERY
+    query = '''
+    SELECT *  
+    FROM DB_XXXXXXX.TABLE_YYYYYYYY
+    LIMIT 10    
+    '''
+```
+
+## 06. Executando código (via terminal bash ou powershell)
 
 `python main.py` 
 
